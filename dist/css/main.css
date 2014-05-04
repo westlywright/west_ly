@@ -16,110 +16,115 @@ time, mark, audio, video {
   border: 0;
   font: inherit;
   font-size: 100%;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 html {
-  line-height: 1;
-}
+  line-height: 1; }
 
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 caption, th, td {
   text-align: left;
   font-weight: normal;
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 q, blockquote {
-  quotes: none;
-}
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
 
 a img {
-  border: none;
-}
+  border: none; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
 
 /**
  * Import grid settings :
  * This to be able to use gridle mixins, etc...
  */
+/*  Syntax Quick Reference
+  --------------------------
+  column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
+  span($ratio: 1, $offset: 0)
+  shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
+  unshift()
+  edit()
+  center($max_width: 1410px, $pad: 0)
+  stack($pad: 0, $align: false)
+  unstack()
+  align($direction: both)
+  cf()
+*/
 /**
- * Medias :
+ * OOCSS:
  */
-ul#medias {
-  background: black;
-  text-align: center;
-  margin-bottom: 30px;
-}
-ul#medias li {
-  display: inline-block;
-  height: 50px;
-  line-height: 50px;
-  padding: 0 30px;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  margin: 0;
-}
-ul#medias li.active, ul#medias li:hover {
-  background: white;
-  color: black;
-}
-@media screen and (min-width: 0) and (max-width: 600px) {
-  ul#medias {
-    display: none;
-  }
-}
+.text-center {
+  text-align: center; }
+
+.center {
+  *zoom: 1;
+  width: auto;
+  max-width: 900px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0; }
+  .center:before, .center:after {
+    content: '';
+    display: table; }
+  .center:after {
+    clear: both; }
+
+.cf {
+  overflow: hidden;
+  *zoom: 1; }
 
 /**
  * Basic formatting :
  */
 html {
-  font: 62.5% "Lato", Helvetica, sans-serif;
-}
+  font: 100% "Raleway", "Lato", sans-serif; }
 
 h1 {
-  font-size: 2.4rem;
-}
+  font-size: 2.4rem; }
 
 h2 {
-  font-size: 2rem;
-}
+  font-size: 2rem; }
 
 body {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 1.4rem;
-}
-html.mobile body {
-  text-align: center;
-}
-@media screen and (max-width: 480px) {
-  body {
-    text-align: center;
-  }
-}
-html.ipad-landscape body {
-  font-size: 16px;
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  body {
-    font-size: 16px;
-  }
-}
+  color: #77888c; }
+
+.main-header {
+  background: #252527;
+  color: #fff;
+  min-height: 400px;
+  background: -webkit-linear-gradient(#111111, #222222);
+  background: -o-linear-gradient(#111111, #222222);
+  background: linear-gradient(#111111, #222222);
+  border-bottom: 1px solid #3d3d3d;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+
+.main-container {
+  -moz-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.35);
+  background: #fff;
+  position: relative;
+  margin: 401px auto 0;
+  z-index: 3; }

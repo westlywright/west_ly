@@ -5,7 +5,7 @@ module.exports = function(grunt) {
             dist: {                            // Target
               options: {
                 compass : true,
-                style: 'expanded'
+                style: 'nested'
               },
               files: {                         // Dictionary of files
                 'dist/css/main.css': '**/main.scss',       // 'destination': 'source'

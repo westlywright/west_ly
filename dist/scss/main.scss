@@ -1,44 +1,29 @@
-@import 'compass';
 @import 'compass/reset';
+@import 'compass';
 
 /**
  * Import grid settings :
  * This to be able to use gridle mixins, etc...
  */
-@import 'settings';
+@import 'index';
 
-$body-font: 'Lato', Helvetica, sans-serif;
+$body-font: 'Raleway', 'Lato', sans-serif;
 
-$base-font-size: 62.5%;
+$base-font-size: 100%;
 
 /**
- * Medias :
+ * OOCSS:
  */
-ul#medias {
-    background:black;
-    text-align:center;
-    margin-bottom:30px;
+.text-center {
+    text-align: center;
+}
 
-    li {
-        display:inline-block;
-        height:50px;
-        line-height:50px;
-        padding:0 30px;
-        color:white;
-        font-size:16px;
-        cursor:pointer;
-        margin:0;
+.center {
+    @include center(900px);
+}
 
-        &.active,
-        &:hover {
-            background:white;
-            color:black;
-        }
-    }
-
-    @include gridle_state(0, 600px) {
-        display:none;
-    }
+.cf {
+    @include clearfix();
 }
 
 /**
@@ -55,15 +40,32 @@ h2 {
     font-size: 2rem;
 }
 
+
+
 body {
     @include box-sizing(border-box);
-
-    @include gridle_state('mobile') {
-        text-align:center;
-    }
-    @include gridle_state('ipad-landscape') {
-        font-size:16px;
-    }
-
     font-size: 1.4rem;
+    color:#77888c;
+}
+
+.main-header {
+    background: #252527;
+    color: #fff;
+    min-height: 400px;
+    background: -webkit-linear-gradient(#111, #222);
+    background: -o-linear-gradient(#111, #222);
+    background: linear-gradient(#111, #222);
+    border-bottom: 1px solid #3d3d3d;
+    position: fixed;
+    top: 0;
+    width:100%;
+    z-index: 1;
+}
+
+.main-container {
+    @include box-shadow(0 0 30px 0 rgba(0,0,0,0.35));
+    background: #fff;
+    position: relative;
+    margin: 401px auto 0;
+    z-index: 3;
 }
