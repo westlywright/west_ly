@@ -136,6 +136,51 @@ body {
     font-size: 4rem;
     right: 2%;
     top: 30px;
+    overflow: hidden;
+    padding-bottom: 5px;
+    z-index: 1; }
+    .main-header .title::after {
+      -moz-transition: -moz-transform 0.35s;
+      -o-transition: -o-transform 0.35s;
+      -webkit-transition: -webkit-transform 0.35s;
+      transition: transform 0.35s;
+      -moz-transform: translate3d(100%, 0, 0);
+      -ms-transform: translate3d(100%, 0, 0);
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+      background: #fff;
+      bottom: 0;
+      content: '';
+      height: 1px;
+      position: absolute;
+      right: 0;
+      width: 100%; }
+  .main-header .sub-title {
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -moz-transition: opacity 0.35s, -moz-transform 0.35s;
+    -o-transition: opacity 0.35s, -o-transform 0.35s;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -moz-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    font-size: .8rem;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    right: 2%;
+    top: 80px;
     z-index: 1; }
   .main-header .main-header-background {
     -moz-transition: opacity 0.35s, -moz-transform 0.35s;
@@ -157,6 +202,18 @@ body {
       -ms-transform: translate3d(0, 0, 0) scale(1);
       -webkit-transform: translate3d(0, 0, 0) scale(1);
       transform: translate3d(0, 0, 0) scale(1); }
+  .main-header:hover .title::after {
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  .main-header:hover .sub-title {
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1; }
 
 .main-container {
   -moz-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.35);

@@ -65,6 +65,29 @@ body {
         font-size: 4rem;
         right: 2%;
         top: 30px;
+        overflow: hidden;
+        padding-bottom: 5px;
+        z-index: 1;
+        &::after{
+            @include transition(transform 0.35s);
+            @include transform(translate3d(100%,0,0));
+            background: #fff;
+            bottom: 0;
+            content: '';
+            height: 1px;
+            position: absolute;
+            right: 0;
+            width: 100%;
+        }
+    }
+    .sub-title {
+        @include align(vertical);
+        @include transition(opacity 0.35s, transform 0.35s);
+        @include transform(translate3d(-100%,0,0));
+        font-size: .8rem;
+        @include opacity(0);
+        right: 2%;
+        top: 80px;
         z-index: 1;
     }
     .main-header-background {
@@ -78,6 +101,17 @@ body {
         width:100%;
         &:hover {
             @include transform(translate3d(0,0,0) scale(1));
+        }
+    }
+    &:hover {
+        .title {
+            &::after {
+                @include transform(translate3d(0,0,0));
+            }
+        }
+        .sub-title {
+                @include transform(translate3d(0,0,0));
+                @include opacity(1);
         }
     }
 }
