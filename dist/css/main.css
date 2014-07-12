@@ -88,6 +88,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   overflow: hidden;
   *zoom: 1; }
 
+strong {
+  font-weight: 800; }
+
 /**
  * Basic formatting :
  */
@@ -130,7 +133,7 @@ body {
     -moz-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
-    left: 1%;
+    right: 2%;
     top: 30px;
     z-index: 1; }
   .main-header .main-header-background {
@@ -142,7 +145,7 @@ body {
     -ms-transform: translate3d(0, 0, 0) scale(1.12);
     -webkit-transform: translate3d(0, 0, 0) scale(1.12);
     transform: translate3d(0, 0, 0) scale(1.12);
-    background: url("../img/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg");
+    background: url("../img/unsplash_528c8f581f45e_1.JPG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

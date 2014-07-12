@@ -25,6 +25,9 @@ $base-font-size: 100%;
 .cf {
     @include clearfix();
 }
+strong {
+    font-weight: 800;
+}
 
 /**
  * Basic formatting :
@@ -59,14 +62,14 @@ body {
     width:100%;
     h2 {
         @include align(vertical);
-        left: 1%;
+        right: 2%;
         top: 30px;
         z-index: 1;
     }
     .main-header-background {
         @include transition(opacity 0.35s, transform 0.35s);
         @include transform(translate3d(0,0,0) scale(1.12));
-        background: url("../img/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg");
+        background: url("../img/unsplash_528c8f581f45e_1.JPG");
         background-size:cover;
         background-position:center;
         background-repeat:no-repeat;
