@@ -165,3 +165,18 @@ body {
   position: relative;
   margin: 401px auto 0;
   z-index: 3; }
+  .main-container .content {
+    *zoom: 1;
+    width: auto;
+    max-width: 1410px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 3rem;
+    padding-right: 3rem; }
+    .main-container .content:before, .main-container .content:after {
+      content: '';
+      display: table; }
+    .main-container .content:after {
+      clear: both; }
