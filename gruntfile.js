@@ -6,6 +6,12 @@ module.exports = function(grunt) {
                         dest: 'built/js/vendor/_all.js'
                     }
                 },
+                ngtemplates: {
+                    ngTemplates: {
+                        src: ['src/**/*.html'],
+                        dest: 'dist/js/templates.js'
+                    }
+                },
                 sass: {                              // Task
                         dist: {                            // Target
                             options: {
@@ -35,7 +41,8 @@ module.exports = function(grunt) {
         grunt.loadNpmTasks('grunt-contrib-sass');
         grunt.loadNpmTasks('grunt-contrib-uglify');
         grunt.loadNpmTasks('grunt-contrib-watch');
+        grunt.loadNpmTasks('grunt-angular-templates');
 
-        grunt.registerTask('default', ['bower_concat', 'uglify:vendor', 'sass']);
+        grunt.registerTask('default', ['bower_concat', 'uglify:vendor', 'ngtemplates', 'sass']);
 
 };
