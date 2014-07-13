@@ -63,6 +63,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   cf()
 */
 /**
+ * variables:
+ */
+/**
  * OOCSS:
  */
 .text-center {
@@ -117,7 +120,7 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  color: #77888c;
+  color: #334466;
   font-size: 1.4rem; }
 
 .main-header {
@@ -251,6 +254,7 @@ body {
       margin-bottom: 1rem; }
 
 quote {
+  color: #667788;
   display: block;
   font-size: 1.6rem;
   font-style: italic;

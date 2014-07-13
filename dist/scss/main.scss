@@ -7,6 +7,15 @@
  */
 @import 'index';
 
+
+/**
+ * variables:
+ */
+
+// color pallete
+$font-color: #334466;
+$font-accent: #667788;
+
 $body-font: 'Raleway', 'Lato', sans-serif;
 
 $base-font-size: 100%;
@@ -58,7 +67,7 @@ body {
 
 body {
     @include box-sizing(border-box);
-    color:#77888c;
+    color:$font-color;
     font-size: 1.4rem;
 }
 
@@ -140,6 +149,7 @@ body {
     }
 }
 quote {
+    color: $font-accent;
     display: block;
     font-size: 1.6rem;
     font-style: italic;
