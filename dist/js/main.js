@@ -1,2 +1,2 @@
-var mainApp = angular.module('256_bits', ['ui.router']);
-mainApp.run()
+!function(a,b){b["true"]=a,angular.module("ngTemplates",[]);var c=angular.module("256_bits",["ui.router","ngTemplates"]);c.config(["$stateProvider","$urlRouterProvider",function(a,b){b.otherwise("/"),a.state("home",{url:"/",templateUrl:"src/app/views/home.html"})}])}({},function(){return this}());
+//# sourceMappingURL=main.js.map

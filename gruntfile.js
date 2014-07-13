@@ -28,12 +28,24 @@ module.exports = function(grunt) {
                         src: ['built/js/vendor/_all.js'],
                         dest: 'dist/js/vendor.min.js'
 
+                    },
+                    app: {
+                        options: {
+                            sourceMap: true,
+                            wrap: true
+                        },
+                        src: ['src/**/*.js'],
+                        dest: 'dist/js/main.js'
                     }
                 },
                 watch: {
                         sass: {
-                            files: ['**/*.scss'],
+                            files: ['src/**/*.scss'],
                             tasks: ['sass']
+                        },
+                        js: {
+                            files: ['src/**/*.js'],
+                            tasks: ['uglify:app']
                         }
                 }
         });
@@ -43,6 +55,6 @@ module.exports = function(grunt) {
         grunt.loadNpmTasks('grunt-contrib-watch');
         grunt.loadNpmTasks('grunt-angular-templates');
 
-        grunt.registerTask('default', ['bower_concat', 'uglify:vendor', 'ngtemplates', 'sass']);
+        grunt.registerTask('default', ['bower_concat', 'uglify:vendor', 'ngtemplates', 'uglify:app', 'sass']);
 
 };
