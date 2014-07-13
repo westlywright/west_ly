@@ -13,7 +13,7 @@ module.exports = function(grunt) {
                                 style: 'nested'
                             },
                             files: {                         // Dictionary of files
-                                'dist/css/main.css': '**/main.scss',       // 'destination': 'source'
+                                'src/scss/main.css': 'dist/css/main.scss',       // 'destination': 'source'
                             }
                         }
                 },

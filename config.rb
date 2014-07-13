@@ -1,2 +1,2 @@
-sass_dir = 'dist/scss'
-additional_import_paths = "dist/scss/jeet"
+sass_dir = 'src/scss'
+additional_import_paths = "src/scss/jeet"
