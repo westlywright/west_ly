@@ -141,7 +141,7 @@ body {
     margin: 401px auto 0;
     z-index: 3;
     .content {
-        @include center($pad: 3rem);
+        @include center($max-width: 100%, $pad: 4rem);
         margin-top: 3rem;
         p {
             margin-bottom: 1rem;

@@ -237,13 +237,13 @@ body {
   .main-container .content {
     *zoom: 1;
     width: auto;
-    max-width: 1410px;
+    max-width: 100%;
     float: none;
     display: block;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     margin-top: 3rem; }
     .main-container .content:before, .main-container .content:after {
       content: '';
