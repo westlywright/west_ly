@@ -91,6 +91,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 strong {
   font-weight: 800; }
 
+.f-height {
+  height: 100%; }
+
 /**
  * Basic formatting :
  */
@@ -106,6 +109,10 @@ h2 {
 /**
  * Page styles :
  */
+html,
+body {
+  height: 100%; }
+
 body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -220,6 +227,7 @@ body {
   -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.35);
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.35);
   background: #fff;
+  display: table;
   position: relative;
   margin: 401px auto 0;
   z-index: 3; }
@@ -232,9 +240,20 @@ body {
     margin-right: auto;
     margin-left: auto;
     padding-left: 3rem;
-    padding-right: 3rem; }
+    padding-right: 3rem;
+    margin-top: 3rem; }
     .main-container .content:before, .main-container .content:after {
       content: '';
       display: table; }
     .main-container .content:after {
       clear: both; }
+    .main-container .content p {
+      margin-bottom: 1rem; }
+
+quote {
+  display: block;
+  font-size: 1.6rem;
+  font-style: italic;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  opacity: .6; }

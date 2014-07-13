@@ -29,6 +29,10 @@ strong {
     font-weight: 800;
 }
 
+.f-height {
+    height: 100%;
+}
+
 /**
  * Basic formatting :
  */
@@ -47,6 +51,11 @@ h2 {
 /**
  * Page styles :
  */
+html,
+body {
+    height: 100%;
+}
+
 body {
     @include box-sizing(border-box);
     color:#77888c;
@@ -118,10 +127,23 @@ body {
 .main-container {
     @include box-shadow(0 0 30px 0 rgba(0,0,0,0.35));
     background: #fff;
+    display: table;
     position: relative;
     margin: 401px auto 0;
     z-index: 3;
     .content {
         @include center($pad: 3rem);
+        margin-top: 3rem;
+        p {
+            margin-bottom: 1rem;
+        }
     }
+}
+quote {
+    display: block;
+    font-size: 1.6rem;
+    font-style: italic;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    opacity: .6;
 }
