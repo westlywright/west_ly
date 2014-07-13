@@ -15,10 +15,12 @@
   ],
   "devDependencies": {
     "angular": "~1.2.20",
-    "angular-ui-router": "~0.2.10"
+    "angular-ui-router": "~0.2.10",
+    "jquery": "~2.1.1"
   },
   "dependencies": {
     "angular": "~1.2.20",
-    "angular-ui-router": "~0.2.10"
+    "angular-ui-router": "~0.2.10",
+    "jquery": "~2.1.1"
   }
 }

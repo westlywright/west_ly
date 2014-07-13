@@ -1,6 +1,13 @@
 angular.module('ngTemplates').run(['$templateCache', function($templateCache) {
   'use strict';
 
+  $templateCache.put('src/app/directives/side-nav-template.html',
+    "<span  class=\"side-nav-container\">\n" +
+    "    <i class=\"fa fa-cog\" id=\"side-nav-cog\"></i>\n" +
+    "</span>"
+  );
+
+
   $templateCache.put('src/app/views/home.html',
     "<p>Hello! Im Wes. I am a Software Engineer living in Southern California. I make stuff for the web. I love it.</p>\n" +
     "<quote>What a computer is to me is the most remarkable tool that we have ever come up with. It’s the equivalent of a bicycle for our minds. - Steve Jobs</quote>\n" +

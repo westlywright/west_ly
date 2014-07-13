@@ -4,7 +4,8 @@ angular.module('ngTemplates', []);
 var mainApp = angular.module('256_bits',
     [
         'ui.router',
-        'ngTemplates'
+        'ngTemplates',
+        'directives'
     ]
 );
 

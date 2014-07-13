@@ -3,7 +3,10 @@ module.exports = function(grunt) {
                 pkg: grunt.file.readJSON('package.json'),
                 bower_concat: {
                     vendor: {
-                        dest: 'built/js/vendor/_all.js'
+                        dest: 'built/js/vendor/_all.js',
+                        dependencies: {
+                            'angular': 'jquery'
+                        }
                     }
                 },
                 ngtemplates: {
@@ -19,7 +22,7 @@ module.exports = function(grunt) {
                                 style: 'nested'
                             },
                             files: {                         // Dictionary of files
-                                'src/scss/main.css': 'dist/css/main.scss',       // 'destination': 'source'
+                                'dist/css/main.css': 'src/scss/main.scss',       // 'destination': 'source'
                             }
                         }
                 },
@@ -46,6 +49,10 @@ module.exports = function(grunt) {
                         js: {
                             files: ['src/**/*.js'],
                             tasks: ['uglify:app']
+                        },
+                        templates: {
+                            files: ['src/**/*.html'],
+                            tasks: ['ngtemplates']
                         }
                 }
         });
