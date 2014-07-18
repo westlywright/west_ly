@@ -234,33 +234,39 @@ body {
   display: table;
   position: relative;
   margin: 401px auto 0;
-  z-index: 3; }
+  z-index: 3;
+  width: 100%; }
   .main-container .content {
     *zoom: 1;
-    width: auto;
-    max-width: 100%;
-    float: none;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 65.66667%;
+    margin-left: 17.4997%;
+    margin-right: 3%;
     margin-top: 3rem; }
     .main-container .content:before, .main-container .content:after {
       content: '';
       display: table; }
     .main-container .content:after {
       clear: both; }
+    .main-container .content:last-child {
+      margin-right: 0%; }
     .main-container .content p {
       margin-bottom: 1rem; }
 
 .side-nav-container {
   color: #667788;
-  font-size: 2rem;
+  font-size: 3rem;
   position: absolute;
-  top: 3rem;
-  left: 1rem;
+  top: 7.5rem;
+  left: 2rem;
   z-index: 4; }
+  .side-nav-container:hover {
+    cursor: pointer; }
 
 quote {
   color: #667788;
