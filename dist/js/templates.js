@@ -4,6 +4,12 @@ angular.module('ngTemplates').run(['$templateCache', function($templateCache) {
   $templateCache.put('src/app/directives/side-nav-template.html',
     "<span  class=\"side-nav-container\">\n" +
     "    <i class=\"fa fa-cog\" id=\"side-nav-cog\"></i>\n" +
+    "    <ul class=\"drop-down\">\n" +
+    "        <li><i class=\"fa fa-home\"></i></li>\n" +
+    "        <li><i class=\"fa fa-github\"></i></li>\n" +
+    "        <li><i class=\"fa  fa-instagram\"></i></li>\n" +
+    "        <li><i class=\"fa  fa-twitter\"></i></li>\n" +
+    "    </ul>\n" +
     "</span>"
   );
 

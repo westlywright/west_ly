@@ -109,6 +109,9 @@ h1 {
 h2 {
   font-size: 2rem; }
 
+ul li {
+  list-style: none; }
+
 /**
  * Page styles :
  */
@@ -187,9 +190,9 @@ body {
     -ms-transform: translate3d(-100%, 0, 0);
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
-    font-size: .8rem;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
+    font-size: .8rem;
     right: 2%;
     top: 80px;
     z-index: 1; }
@@ -267,6 +270,24 @@ body {
   z-index: 4; }
   .side-nav-container:hover {
     cursor: pointer; }
+    .side-nav-container:hover .drop-down {
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+      opacity: 1; }
+  .side-nav-container .drop-down {
+    -moz-transition: opacity 0.35s, -moz-transform 0.35s;
+    -o-transition: opacity 0.35s, -o-transform 0.35s;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -moz-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
 
 quote {
   color: #667788;
