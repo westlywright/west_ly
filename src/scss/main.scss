@@ -194,3 +194,11 @@ quote {
     padding: 1.5rem;
     opacity: .6;
 }
+
+.disabled {
+    pointer-events: none;
+    color:lighten($font-accent, 40%) !important;
+    &:hover {
+        cursor: no-drop;
+    }
+}
