@@ -5,12 +5,20 @@ angular.module('ngTemplates').run(['$templateCache', function($templateCache) {
     "<span  class=\"side-nav-container\">\n" +
     "    <i class=\"fa fa-cog\" id=\"side-nav-cog\"></i>\n" +
     "    <ul class=\"drop-down\">\n" +
-    "        <li><i class=\"fa fa-home\"></i></li>\n" +
-    "        <li><i class=\"fa fa-github\"></i></li>\n" +
-    "        <li><i class=\"fa  fa-instagram\"></i></li>\n" +
-    "        <li><i class=\"fa  fa-twitter\"></i></li>\n" +
+    "        <li>\n" +
+    "            <a href=\"\"><i class=\"fa fa-home\"></i></a>\n" +
+    "        </li>\n" +
+    "        <li>\n" +
+    "            <a href=\"https://github.com/westlywright\" target=\"_blank\"><i class=\"fa fa-github\"></i></a>\n" +
+    "        </li>\n" +
+    "        <li>\n" +
+    "            <a href=\"http://instagram.com/weswright\" target=\"_blank\"><i class=\"fa  fa-instagram\"></i></a>\n" +
+    "        </li>\n" +
+    "        <li>\n" +
+    "            <a href=\"https://twitter.com/westlywright\" target=\"_blank\"><i class=\"fa  fa-twitter\"></i></a>\n" +
+    "        </li>\n" +
     "    </ul>\n" +
-    "</span>"
+    "</span>\n"
   );
 
 

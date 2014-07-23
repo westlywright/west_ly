@@ -164,6 +164,12 @@ body {
     left: 2rem;
     overflow:hidden;
     z-index: 4;
+    a {
+        color:$font-accent;
+        &:hover {
+            color:lighten($font-accent, 20%);
+        }
+    }
     &:hover {
         cursor: pointer;
         .drop-down {

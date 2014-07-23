@@ -269,6 +269,10 @@ body {
   left: 2rem;
   overflow: hidden;
   z-index: 4; }
+  .side-nav-container a {
+    color: #667788; }
+    .side-nav-container a:hover {
+      color: #9eaab6; }
   .side-nav-container:hover {
     cursor: pointer; }
     .side-nav-container:hover .drop-down {
