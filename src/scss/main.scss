@@ -148,7 +148,6 @@ body {
     z-index: 3;
     width: 100%;
     .content {
-        // @include center($max-width: 100%, $pad: 4rem);
         @include col(2/3, .1699);
         margin-top: 3rem;
         p {
@@ -163,6 +162,7 @@ body {
     position: absolute;
     top: 7.5rem;
     left: 2rem;
+    overflow:hidden;
     z-index: 4;
     &:hover {
         cursor: pointer;
@@ -174,7 +174,7 @@ body {
     .drop-down {
         // @@TODO@@ - Jul 17, 2014 - fix transition here
         @include transition(opacity 0.35s, transform 0.35s);
-        @include transform(translate3d(0,-100%,0));
+        @include transform(translate3d(0,-28%,0));
         @include opacity(0);
     }
 }
