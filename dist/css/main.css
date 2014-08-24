@@ -276,23 +276,13 @@ body {
   .side-nav-container:hover {
     cursor: pointer; }
     .side-nav-container:hover .drop-down {
-      -moz-transform: translate3d(0, 0, 0);
-      -ms-transform: translate3d(0, 0, 0);
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-      filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-      opacity: 1; }
+      max-height: 500px; }
   .side-nav-container .drop-down {
-    -moz-transition: opacity 0.35s, -moz-transform 0.35s;
-    -o-transition: opacity 0.35s, -o-transform 0.35s;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -moz-transform: translate3d(0, -28%, 0);
-    -ms-transform: translate3d(0, -28%, 0);
-    -webkit-transform: translate3d(0, -28%, 0);
-    transform: translate3d(0, -28%, 0);
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0; }
+    max-height: 0;
+    -moz-transition: max-height, 0.55s;
+    -o-transition: max-height, 0.55s;
+    -webkit-transition: max-height, 0.55s;
+    transition: max-height, 0.55s; }
 
 quote {
   color: #667788;

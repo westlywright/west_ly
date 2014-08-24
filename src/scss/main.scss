@@ -173,15 +173,12 @@ body {
     &:hover {
         cursor: pointer;
         .drop-down {
-            @include transform(translate3d(0,0,0));
-            @include opacity(1);
+            max-height: 500px;
         }
     }
     .drop-down {
-        // @@TODO@@ - Jul 17, 2014 - fix transition here
-        @include transition(opacity 0.35s, transform 0.35s);
-        @include transform(translate3d(0,-28%,0));
-        @include opacity(0);
+        max-height: 0;
+        @include transition(max-height, .55s);
     }
 }
 
