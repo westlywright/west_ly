@@ -18,6 +18,9 @@ mainApp.config([
         $stateProvider.state('home', {
             url: '/',
             templateUrl: 'src/app/views/home.html'
+        }).state('cv', {
+            url: '/cv',
+            templateUrl: 'src/app/views/cv.html'
         });
 
         // Utilities functions below

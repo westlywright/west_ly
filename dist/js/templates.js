@@ -6,13 +6,13 @@ angular.module('ngTemplates').run(['$templateCache', function($templateCache) {
     "    <i class=\"fa fa-cog\" id=\"side-nav-cog\"></i>\n" +
     "    <ul class=\"drop-down\">\n" +
     "        <li>\n" +
-    "            <a href=\"\"><i class=\"fa fa-home\"></i></a>\n" +
+    "            <a ui-sref=\"home\"><i class=\"fa fa-home\"></i></a>\n" +
     "        </li>\n" +
     "        <li>\n" +
     "            <a class=\"disabled\"><i class=\"fa fa-pencil-square-o\"></i></a>\n" +
     "        </li>\n" +
     "        <li>\n" +
-    "            <a class=\"disabled\"><i class=\"fa fa-file-code-o\"></i></i></a>\n" +
+    "            <a ui-sref=\"cv\"><i class=\"fa fa-file-code-o\"></i></i></a>\n" +
     "        </li>\n" +
     "        <li>\n" +
     "            <a href=\"https://github.com/westlywright\" target=\"_blank\"><i class=\"fa fa-github\"></i></a>\n" +
@@ -25,6 +25,21 @@ angular.module('ngTemplates').run(['$templateCache', function($templateCache) {
     "        </li>\n" +
     "    </ul>\n" +
     "</span>\n"
+  );
+
+
+  $templateCache.put('src/app/views/cv.html',
+    "<div>\n" +
+    "    <h1 class=\"text-center\">Curriculum Vitae</h1>\n" +
+    "    <div class=\"hero\">\n" +
+    "        <h4>Tools</h4>\n" +
+    "        <span class=\"devicons devicons-github_alt\">&#xe608</span>\n" +
+    "        <h4>Javascript</h4>\n" +
+    "        <h4>HTML&Things</h4>\n" +
+    "        <h4>CSS&Things</h4>\n" +
+    "        <h4>Programming Languages</h4>\n" +
+    "    </div>\n" +
+    "</div>"
   );
 
 
