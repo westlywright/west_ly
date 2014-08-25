@@ -12,7 +12,7 @@ angular.module('ngTemplates').run(['$templateCache', function($templateCache) {
     "            <a class=\"disabled\"><i class=\"fa fa-pencil-square-o\"></i></a>\n" +
     "        </li>\n" +
     "        <li>\n" +
-    "            <a ui-sref=\"cv\"><i class=\"fa fa-file-code-o\"></i></i></a>\n" +
+    "            <a class=\"disabled\"><i class=\"fa fa-file-code-o\"></i></i></a>\n" +
     "        </li>\n" +
     "        <li>\n" +
     "            <a href=\"https://github.com/westlywright\" target=\"_blank\"><i class=\"fa fa-github\"></i></a>\n" +

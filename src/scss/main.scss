@@ -117,7 +117,7 @@ body {
     .main-header-background {
         @include transition(opacity 0.35s, transform 0.35s);
         @include transform(translate3d(0,0,0) scale(1.12));
-        background: url("../img/unsplash_528c8f581f45e_1_compressed.JPG");
+        background: url("../img/unsplash_528c8f581f45e_1.JPG");
         background-size:cover;
         background-position:center;
         background-repeat:no-repeat;
