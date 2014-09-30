@@ -45,7 +45,19 @@ strong {
 /**
  * Basic formatting :
  */
- html {
+html,
+body {
+    height: 100%;
+}
+
+body {
+    @include box-sizing(border-box);
+    color:$font-color;
+    font-size: 1.4rem;
+    position:relative;
+}
+
+html {
     font: $base-font-size $body-font;
 }
 
@@ -65,18 +77,6 @@ ul {
 /**
  * Page styles :
  */
-html,
-body {
-    height: 100%;
-}
-
-body {
-    @include box-sizing(border-box);
-    color:$font-color;
-    font-size: 1.4rem;
-    position:relative;
-}
-
 .main-header {
     border-bottom: 1px solid #3d3d3d;
     color: #fff;
