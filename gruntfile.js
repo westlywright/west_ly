@@ -34,8 +34,10 @@ module.exports = function(grunt) {
                     },
                     app: {
                         options: {
-                            sourceMap: true,
-                            wrap: true
+                            sourceMap: false,
+                            beautify: true,
+                            wrap: true,
+                            mangle: false
                         },
                         src: ['src/**/*.js'],
                         dest: 'dist/js/main.js'

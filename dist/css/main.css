@@ -100,6 +100,18 @@ strong {
 /**
  * Basic formatting :
  */
+html,
+body {
+  height: 100%; }
+
+body {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #334466;
+  font-size: 1.4rem;
+  position: relative; }
+
 html {
   font: 100% "Raleway", "Lato", sans-serif; }
 
@@ -115,18 +127,6 @@ ul li {
 /**
  * Page styles :
  */
-html,
-body {
-  height: 100%; }
-
-body {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  color: #334466;
-  font-size: 1.4rem;
-  position: relative; }
-
 .main-header {
   border-bottom: 1px solid #3d3d3d;
   color: #fff;
@@ -298,3 +298,5 @@ quote {
   color: #d8dde2 !important; }
   .disabled:hover {
     cursor: no-drop; }
+
+/*# sourceMappingURL=main.css.map */

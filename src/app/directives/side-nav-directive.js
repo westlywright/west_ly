@@ -1,4 +1,4 @@
-angular.module('directives', [])
+angular.module('directives')
     .directive('sideNav', ['$window', function($window) {
             function link(scope, element, attrs) {
                 angular.element($window).scroll( function() {
