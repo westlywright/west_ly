@@ -9,7 +9,7 @@ angular.module('ngTemplates').run(['$templateCache', function($templateCache) {
     "            <a ui-sref=\"home\"><i class=\"fa fa-home\"></i></a>\n" +
     "        </li>\n" +
     "        <li>\n" +
-    "            <a class=\"disabled\"><i class=\"fa fa-pencil-square-o\"></i></a>\n" +
+    "            <a href=\"http://256-bits.com/blog\"><i class=\"fa fa-pencil-square-o\"></i></a>\n" +
     "        </li>\n" +
     "        <li>\n" +
     "            <a class=\"disabled\"><i class=\"fa fa-file-code-o\"></i></i></a>\n" +
